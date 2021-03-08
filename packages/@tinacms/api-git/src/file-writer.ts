@@ -108,6 +108,7 @@ function tryToWrite() {
       // finishes.
       const TINA_GIT_DEBOUNCE_MS =
         Number(process.env.TINA_GIT_DEBOUNCE_MS) || 1000
+      console.info('Rodando DEBOUNCE')
       setTimeout(buildFinished, TINA_GIT_DEBOUNCE_MS)
     }
   })
